@@ -29,3 +29,6 @@ xinput set-prop "$device" "Synaptics ClickPad" 1
 
 # enable right and middle click (drag & drop selection) for the clickpad
 xinput set-prop "$device" "Synaptics Soft Button Areas" $left $right $top $bottom $middleleft $middleright $top $bottom
+
+# enable the triple-finger tap as middle click
+synclient TapButton1=1 TapButton2=3 TapButton3=2
